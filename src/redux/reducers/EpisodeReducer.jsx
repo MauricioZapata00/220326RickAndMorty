@@ -766,5 +766,6 @@ export const EpisodeReducer = (state = initialState, action) => {
     
         default:
             return state;
+            
     }
 }

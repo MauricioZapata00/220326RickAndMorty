@@ -9,10 +9,7 @@ const Header = () => {
                     <Link to="/episodes">Episodios</Link>
                 </li>
                 <li>
-                    <Link to="/personajes">Episodios</Link>
-                </li>
-                <li>
-                    <Link to="/seasones">Temporadas</Link>
+                    <Link to="/characters">Personajes</Link>
                 </li>
             </ul>
         </div>
