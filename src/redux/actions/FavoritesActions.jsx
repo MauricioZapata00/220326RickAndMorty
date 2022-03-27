@@ -6,3 +6,10 @@ export const setFavorites = (favorites) => {
         data: favorites
     };
 };
+
+export const removeFavorites = (favorites) => {
+    return{
+        type: ActionTypes.REMOVE_FAVORITES,
+        data: favorites
+    };
+};
