@@ -5,6 +5,7 @@ const response = axios.get("https://rickandmortyapi.com/api/episode")
     .catch((err) => {
         console.log("El error es: ", err)
     });
+    console.log(response);
 const initialState = {
 
     /*
@@ -41,7 +42,7 @@ const initialState = {
     
    //episodes: []
 
-   /*
+   
    episodes: [
     {
         id: 1,
@@ -755,8 +756,8 @@ const initialState = {
     }
     
 ]
-*/
-    episodes:response.data.results
+
+    //episodes:response.data.results
 }
 export const EpisodeReducer = (state = initialState, action) => {
     switch (action.type) {

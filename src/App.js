@@ -8,11 +8,12 @@ import SingleEpisode from './containers/SingleEpisode';
 function App() {
   return (
     <div className="App">
+      <Header />
       <Routes>
         <Route path="/episodes" element={<EpisodesListing />} />
         <Route path="/episode/:episodeId" element={<SingleEpisode />} />
       </Routes>
-      <Header />
+      
     </div>
   );
 }

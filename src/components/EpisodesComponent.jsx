@@ -8,6 +8,7 @@ const EpisodesComponent = () => {
     const ArrayEpisodes = Array.from(episodes)
     const renderedListOfEpisodes = ArrayEpisodes.map((episode) =>{
         return (
+            /*
             <div key={episode.id}>
                 <h1>Nombre: {episode.name}</h1>
                 <h2>Fecha de lanzamiento: {episode.air_date}</h2>
@@ -15,6 +16,19 @@ const EpisodesComponent = () => {
                 <img src={episode.url} alt={episode.name}></img>
                 <h3>Imagen: {episode.url}</h3>
             </div>
+            */
+            <div className="container-sm" key={episode.id}>
+                <div className="card" style={{ width: '18rem' }} >
+                    <a href={episode.url} className="card-link">Episodio</a>
+                    <div className="card-body">
+                        <h5 className="card-title">Episodio {episode.episode} - {episode.name}</h5>
+                        <p className="card-text">Fecha de lanzamiento: {episode.air_date}</p>
+                        <a href="#" className="btn btn-primary">Ver info</a>
+                    </div>
+                </div>
+            </div>
+          
+            
         )
     })
     const {name, air_date, episode, url} = episodes;
