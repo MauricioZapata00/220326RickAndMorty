@@ -17,8 +17,8 @@ const EpisodesComponent = () => {
                 <h3>Imagen: {episode.url}</h3>
             </div>
             */
-            <div className="container-sm" key={episode.id}>
-                <div className="card" style={{ width: '18rem' }} >
+            <div className="container" key={episode.id}>
+                <div className="card" style={{ minWidth: '200px' }} >
                     <a href={episode.url} className="card-link">Episodio</a>
                     <div className="card-body">
                         <h5 className="card-title">Episodio {episode.episode} - {episode.name}</h5>
