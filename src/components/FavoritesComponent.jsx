@@ -13,7 +13,8 @@ const FavoritesComponent = () => {
     const renderedListOfFavorites = ArrayFavorites.map((favorite) => {
         console.log(favorite)
         return(
-            <div className="col mb-2" key={favorite.id}>
+            
+            <div className="col-md-4 mb-2" key={favorite.id}>
                 <div className="card" style={{ minWidth: '20px' }}>
                     <img src={favorite.image} alt={favorite.name} className="card-img-top"/>
                     <div className="card-body">
@@ -23,11 +24,13 @@ const FavoritesComponent = () => {
                     </div>
                 </div>
             </div>
+            
+            
         )
     })
 
     return(
-        <div>
+        <div className="row">
             {renderedListOfFavorites}
         </div>
     )

@@ -11,7 +11,7 @@ const FavoritesListing = () => {
         showFavorites()
     },[])
     return(
-        <div className="row">
+        <div className="container">
             <FavoritesComponent />
         </div>
     )

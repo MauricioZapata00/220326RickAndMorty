@@ -25,7 +25,7 @@ const CharactersListing = () => {
 
     
     return(
-        <div className="row">
+        <div className="container">
             <CharactersComponent />
         </div>
     )

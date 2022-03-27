@@ -17,7 +17,7 @@ const EpisodesComponent = () => {
                 <h3>Imagen: {episode.url}</h3>
             </div>
             */
-            <div className="container" key={episode.id}>
+            <div className="col-md-4 mb-2" key={episode.id}>
                 <div className="card" style={{ minWidth: '200px' }} >
                     <a href={episode.url} className="card-link">Episodio</a>
                     <div className="card-body">
@@ -33,7 +33,7 @@ const EpisodesComponent = () => {
     })
     const {name, air_date, episode, url} = episodes;
     return(
-        <div>
+        <div className="row">
             {renderedListOfEpisodes}
         </div>
     )

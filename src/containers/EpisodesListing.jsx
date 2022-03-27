@@ -25,7 +25,7 @@ const EpisodesListing = () => {
     }, [])
     //const {name, air_date, episode, url} = episodes;
     return (
-        <div className="row">
+        <div className="container">
             <div >
                 <EpisodesComponent />
             </div>
