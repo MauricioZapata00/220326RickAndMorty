@@ -11,6 +11,9 @@ const Header = () => {
                 <li>
                     <Link to="/characters">Personajes</Link>
                 </li>
+                <li>
+                    <Link to="/favorites">Favoritos</Link>
+                </li>
             </ul>
         </div>
     )
