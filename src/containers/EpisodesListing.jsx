@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import {setEpisodes} from "../redux/actions/EpisodesActions"
 import EpisodesComponent from "../components/EpisodesComponent";
 
+
 const EpisodesListing = () => {
     // Create
     //const episodes = useSelector((state) => state)
@@ -25,11 +26,10 @@ const EpisodesListing = () => {
     }, [])
     //const {name, air_date, episode, url} = episodes;
     return (
+        
         <div className="container">
-            <div >
-                <EpisodesComponent />
-            </div>
             
+            <EpisodesComponent />
         </div>
     )
 }
